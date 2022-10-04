@@ -2,9 +2,6 @@
     --text-color-white: #fff;
 }
 
-section {
-    width: 100%;
-}
 
 .slider__area .slider__area-box {
     position: relative;
@@ -36,13 +33,14 @@ section {
     letter-spacing: .4rem;
 }
 
+
 .content__area {
-    margin: 4rem 0;
+    width: 1140px;
+    max-width: 100%;
+    margin: 4rem auto;
 }
 
 .content__area-box {
-    width: 114rem;
-    margin: 0 auto;
     display: flex;
 }
 
@@ -106,27 +104,76 @@ section {
     width: 8rem;
 }
 
-@media screen and (max-width: 768px) {
-    .content__area .content__area-box {
-        flex-direction: column;
-        width: 100%;
-        margin: 0 1.2rem;
+/* reponsive */
+
+@media screen and (min-width: 991px) {
+    #touch {
+        display: none;
     }
 
-    .content__area .content__area-box .box-left {
+    .box-left label {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slider__area .slider__area-box {
+        height: 20rem;
+    }
+
+    .content__area-box {
+        flex-direction: column;
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+
+    .content__area-box .box-left {
+        flex: 1;
         width: 100%;
+    }
+
+    .box-left label>span {
+        color: #000;
+        font-family: sans-serif !important;
+        border-top: 1px solid #dedede;
+        border-left: 1px solid #dedede;
+        border-right: 1px solid #dedede;
+
+        font-size: 1.2em;
+        padding: 1.2rem 1.6rem;
+        font-variant: small-caps;
+        cursor: pointer;
+        display: block;
+    }
+
+    .box-left label span::after {
+        float: right;
+        right: 10%;
+        content: "+";
+        color: #000;
     }
 
     .box-left .nav-bar {
-        width: 100%;
-        margin-bottom: 2rem;
+        width: 99.5%;
+        margin-bottom: 2.4rem;
+        clear: both;
+        height: 0px;
+        overflow: hidden;
+        transition: height .4s ease;
+        border-bottom: 1px solid transparent;
     }
 
-    .content__area .content__area-box .box-right {
-        width: 100%;
+    #touch {
+        position: absolute;
+        opacity: 0;
+        height: 0px;
     }
 
-    .descriptions {
-        text-align: justify;
+    #touch:checked+.nav-bar {
+        height: 280px;
+        width: 99.5%;
+        border-bottom: 1px solid #dedede;
     }
+
+
 }
