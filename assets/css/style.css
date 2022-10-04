@@ -324,7 +324,8 @@ nav {
         border-right: 1px solid var(--border-primary);
 
         font-size: 1.2em;
-        padding: 1.2rem 1.6rem;
+        padding: 0.8rem 1.6rem;
+        border-radius: 4px;
         font-variant: small-caps;
         cursor: pointer;
         display: block;
@@ -377,5 +378,15 @@ nav {
     .box-right a {
         width: unset;
         text-align: center;
+    }
+
+    .content__area {
+        margin-top: 12px;
+    }
+
+    span::after {
+        float: right;
+        right: 10%;
+        content: "+";
     }
 }
