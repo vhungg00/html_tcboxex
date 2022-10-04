@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/reponsive.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+      }
+      </style>
   </head>
   <body>
     <!-- slider start -->
@@ -32,6 +42,9 @@
             <li class="nav-bar-item"><a href="#">Depot Locations</a></li>
             <li class="nav-bar-item "><a class="border__bottom" href="#">Blog</a></li>
           </ul>
+          <span class="posi material-symbols-outlined">
+            add
+          </span>
         </div>
         <div class="box-right ">
           <h3 class="content">
@@ -56,5 +69,15 @@
       </div>
     </section>
     <!-- Content end -->
+    <script>
+      const $ = document.querySelector.bind(document);
+      const $$ = document.querySelectorAll.bind(document);
+      const inputBtn = $('label[for="touch"]')
+      const posi = $('.posi')
+      const handleTogglePlus = () => {
+        posi.classList.toggle('rotates');
+      }
+      inputBtn.addEventListener('click', handleTogglePlus);
+    </script>
   </body>
 </html>
