@@ -1,5 +1,5 @@
 :root {
-    --font-family: sans-serif;
+    --font-family: 'Poppins';
     --primary: #d70018;
     --black: #000;
     --white: #fff;
@@ -22,7 +22,7 @@ html {
 }
 
 body {
-    font-family: var(--font-family) !important;
+    font-family: var(--font-family);
     font-size: 1.6rem;
     line-height: 1.5;
     overflow-y: overlay;
