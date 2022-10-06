@@ -278,6 +278,8 @@
 /* PC medium resolution > */
 @media (min-width: 1113px) {
     .row {
+        max-width: 100%;
+        flex-shrink: 0;
         margin-left: -12px;
         margin-right: -12px;
     }
@@ -592,4 +594,26 @@
 
 .py-4 {
     padding: 20px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .d-none {
+        display: none;
+    }
 }
