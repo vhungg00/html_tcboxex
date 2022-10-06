@@ -16,6 +16,7 @@
             font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
         }
     </style>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css">
 </head>
 
@@ -136,152 +137,318 @@
             </div>
         </div>
     </header>
-    <div style="height: 60vh;"></div>
+    <div class="breadcrumb__area">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col l-12 c-12">
+                    <ol class="breadcrumb__wrapper">
+                        <li class="breadcrumb-item"><a>Home</a></li>
+                        <li class="breadcrumb-item">Product Selection Tool</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="selection__area">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col l-12">
+                    <div class="selection__heading">
+                        <h2>Product Selection Tool</h2>
+                        <ol class="selection__tappant">
+                            <li class="selection__tappant--active">1.Applications</li>
+                            <li>2.Questions</li>
+                            <li>3.Recommended Products</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col l-12">
+                    <div class="selection__slider1">
+                        <h4 class="selection__slider1-title">Select your application to get started:</h4>
+                        <div class="slider1-carousel">
+                            <div class="carousel-cell-box">
+                                <div class="slider1-carousel-cell cerulean">
+                                    <img src="./assets/images/selection-img/sun.png" alt="">
+                                </div>
+                                <h3>Aplications A</h3>
+                            </div>
+                            <div class="carousel-cell-box slider1-carousel-cell--active">
+                                <div class="slider1-carousel-cell  negative">
+                                    <img src="./assets/images/selection-img/award.png" alt="">
+                                </div>
+                                <h3>Aplications A</h3>
+                            </div>
+                            <div class="carousel-cell-box">
+                                <div class="slider1-carousel-cell rectangle">
+                                    <img src="./assets/images/selection-img/gift.png" alt="">
+                                </div>
+                                <h3>Aplications A</h3>
+                            </div>
+                            <div class="carousel-cell-box">
+                                <div class="slider1-carousel-cell primary-d-1">
+                                    <img src="./assets/images/selection-img/zap.png" alt="">
+                                </div>
+                                <h3>Aplications A</h3>
+                            </div>
+                            <div class="carousel-cell-box">
+                                <div class="slider1-carousel-cell">
+                                    <img src="./assets/images/selection-img/zap.png" alt="">
+                                </div>
+                                <h3>Aplications A</h3>
+                            </div>
+                            <div class="carousel-cell-box">
+                                <div class="slider1-carousel-cell">
+                                    <img src="./assets/images/selection-img/zap.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col l-12">
+                    <div class="selection__slider2">
+                        <h4 class="selection__slider1-title">Select your application to get started:</h4>
+                        <div class="slider1-carousel2">
+                            <div class="carousel-cell-box">
+                                <div class="slider1-carousel-cell gray-1">
+                                    <img src="./assets/images/selection-img/image-regular.png" alt="">
+                                </div>
+                                <h3>Aplications A</h3>
+                            </div>
+                            <div class="carousel-cell-box">
+                                <div class="slider1-carousel-cell gray-1">
+                                    <img src="./assets/images/selection-img/image-regular.png" alt="">
+                                </div>
+                                <h3>Aplications A</h3>
+                            </div>
+                            <div class="carousel-cell-box">
+                                <div class="slider1-carousel-cell gray-1">
+                                    <img src="./assets/images/selection-img/image-regular.png" alt="">
+                                </div>
+                                <h3>Aplications A</h3>
+                            </div>
+                            <div class="carousel-cell-box">
+                                <div class="slider1-carousel-cell gray-1">
+                                    <img src="./assets/images/selection-img/image-regular.png" alt="">
+                                </div>
+                                <h3>Aplications A</h3>
+                            </div>
+                            <div class="carousel-cell-box slider2-carousel-cell--active">
+                                <div class="slider1-carousel-cell gray-1">
+                                    <img src="./assets/images/selection-img/image-regular.png" alt="">
+                                </div>
+                                <h3>Aplications A</h3>
+                            </div>
+                            <div class="carousel-cell-box">
+                                <div class="slider1-carousel-cell gray-1">
+                                    <img src="./assets/images/selection-img/image-regular.png" alt="">
+                                </div>
+                                <h3>Aplications A</h3>
+                            </div>
+                            <div class="carousel-cell-box">
+                                <div class="slider1-carousel-cell gray-1">
+                                    <img src="./assets/images/selection-img/image-regular.png" alt="">
+                                </div>
+                                <h3>Aplications A</h3>
+                            </div>
+
+                        </div>
+                        <button class="btn">Next</button>
+                        <p class="selection__slider2-footer"><strong>Cant find what you're looking for?</stron> <br>
+                            Call <a href="">1300 426 278</a> or <a href="">Contact Us</a> for help.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="subcribe__area">
+        <div class="grid wide">
+            <div class="row justify-content-center">
+                <div class="col l-12 ">
+                    <div class="subcribe__wrapper">
+                        <h2 class="subcribe__heading">Subscribe to Our Newsletter</h2>
+                        <p class="subcribe__des">Be the first to hear about the latest specials, news, products and events.</p>
+                        <form>
+                            <input type="text" name="firtName" class="form-control" placeholder="First Name">
+                            <input type="text" name="lastName" class="form-control" placeholder="Last Name">
+                            <input type="email" name="email" class="form-control" placeholder="Email Address">
+                            <button class="submit-btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <div class="footer__area">
             <div class="grid wide">
-                    <div class="row">
-                        <div class="col l-6">
-                            <div class="footer__logo">
-                                <img src="./assets/images/icon-footer/footer-logo.png" alt="logo">
-                                <p class="footer__descriptions">
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
-                                    labore et dolore magna aliquyam erat, sed diam et justo duo dolores et…Lorem ipsum dolor sit amet, 
-                                    consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna 
-                                    aliquyam erat, sed diam et justo duo dolores et…
-                                </p>
-                            </div>
+                <div class="row">
+                    <div class="col l-6">
+                        <div class="footer__logo">
+                            <img src="./assets/images/icon-footer/footer-logo.png" alt="logo">
+                            <p class="footer__descriptions">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                invidunt ut
+                                labore et dolore magna aliquyam erat, sed diam et justo duo dolores et…Lorem ipsum dolor
+                                sit amet,
+                                consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                                magna
+                                aliquyam erat, sed diam et justo duo dolores et…
+                            </p>
                         </div>
-                        <div class="col l-6">
-                            <div class="fotter__socials">
-                                <span><img src="./assets/images/icon-footer/fb-icon.png" alt=""></span>
-                                <span><img src="./assets/images/icon-footer/intagram-icon.png" alt=""></span>
-                                <span><img src="./assets/images/icon-footer/linkin-icon.png" alt=""></span>
-                                <span><img src="./assets/images/icon-footer/youtube.png" alt=""></span>
-                            </div>
+                    </div>
+                    <div class="col l-6">
+                        <div class="fotter__socials">
+                            <span><img src="./assets/images/icon-footer/fb-icon.png" alt=""></span>
+                            <span><img src="./assets/images/icon-footer/intagram-icon.png" alt=""></span>
+                            <span><img src="./assets/images/icon-footer/linkin-icon.png" alt=""></span>
+                            <span><img src="./assets/images/icon-footer/youtube.png" alt=""></span>
                         </div>
+                    </div>
 
-                    </div>
-                    <div class="row mt-40">
-                        <div class="col l-4">
-                            <div class="footer__widket">
-                                <div class="footer__widket-title">
-                                    <h4>QUICK LINKS</h4>
-                                </div>
-                                <div class="footer__widket-content">
-                                    <div class="row">
-                                        <div class="col l-6">
-                                            <ul>
-                                                <li><a href="">Abouts Us</a></li>
-                                                <li><a href="">GAM  Workshops</a></li>
-                                                <li><a href="">Our Stores</a></li>
-                                                <li><a href="">Our Brands</a></li>
-                                                <li><a href="">Contact Us</a></li>
-                                                <li><a href="">Faqs</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col l-6">
-                                            <ul>
-                                                <li><a href="">Abouts Us</a></li>
-                                                <li><a href="">GAM  Workshops</a></li>
-                                                <li><a href="">Our Stores</a></li>
-                                                <li><a href="">Our Brands</a></li>
-                                                <li><a href="">Contact Us</a></li>
-                                                <li><a href="">Faqs</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+                </div>
+                <div class="row mt-40">
+                    <div class="col l-4">
+                        <div class="footer__widket">
+                            <div class="footer__widket-title">
+                                <h4>QUICK LINKS</h4>
                             </div>
-                        </div>
-                        <div class="col l-4">
-                            <div class="footer__widket">
-                                <div class="footer__widket-title">
-                                    <h4>CONSUMABLES</h4>
-                                </div>
-                                <div class="footer__widket-content">
-                                    <div class="row">
-                                        <div class="col l-6">
-                                            <ul>
-                                                <li><a href="">COLOUR & APPLICATION TAPES</a></li>
-                                                <li><a href="">DIGITAL PRINT MEDIA & LAMINATES</a></li>
-                                                <li><a href="">DISPLAY & POS </a></li>
-                                                <li><a href="">HEAT TRANSFER</a></li>
-                                                <li><a href="">INKS</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col l-6">
-                                            <ul>
-                                                <li><a href="">COLOUR & APPLICATION TAPES</a></li>
-                                                <li><a href="">DIGITAL PRINT MEDIA & LAMINATES</a></li>
-                                                <li><a href="">DISPLAY & POS </a></li>
-                                                <li><a href="">HEAT TRANSFER</a></li>
-                                                <li><a href="">INKS</a></li>
-                                            </ul>
-                                        </div>
+                            <div class="footer__widket-content">
+                                <div class="row">
+                                    <div class="col l-6">
+                                        <ul>
+                                            <li><a href="">Abouts Us</a></li>
+                                            <li><a href="">GAM Workshops</a></li>
+                                            <li><a href="">Our Stores</a></li>
+                                            <li><a href="">Our Brands</a></li>
+                                            <li><a href="">Contact Us</a></li>
+                                            <li><a href="">Faqs</a></li>
+                                        </ul>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col l-4">
-                            <div class="footer__widket">
-                                <div class="footer__widket-title">
-                                    <h4>EQUIPMENT</h4>
-                                </div>
-                                <div class="footer__widket-content">
-                                    <div class="row">
-                                        <div class="col l-6">
-                                            <ul>
-                                                <li><a href="">COLOUR & APPLICATION TAPES</a></li>
-                                                <li><a href="">DIGITAL PRINT MEDIA & LAMINATES</a></li>
-                                                <li><a href="">DISPLAY & POS </a></li>
-                                                <li><a href="">HEAT TRANSFER</a></li>
-                                                <li><a href="">INKS</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col l-6">
-                                            <ul>
-                                                <li><a href="">COLOUR & APPLICATION TAPES</a></li>
-                                                <li><a href="">DIGITAL PRINT MEDIA & LAMINATES</a></li>
-                                                <li><a href="">DISPLAY & POS </a></li>
-                                                <li><a href="">HEAT TRANSFER</a></li>
-                                                <li><a href="">INKS</a></li>
-                                            </ul>
-                                        </div>
+                                    <div class="col l-6">
+                                        <ul>
+                                            <li><a href="">Abouts Us</a></li>
+                                            <li><a href="">GAM Workshops</a></li>
+                                            <li><a href="">Our Stores</a></li>
+                                            <li><a href="">Our Brands</a></li>
+                                            <li><a href="">Contact Us</a></li>
+                                            <li><a href="">Faqs</a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row mt-40">
-                        <div class="col l-6">
-                            <div class="footer__coppyright">
-                                <div class="footer__coppyright-phone">
-                                    <img src="./assets/images/icon-header/phone.png" alt="phone">
-                                    <h4>1300 426 278</h4>
-                                </div>
-                                <p class="footer__coppyright-title">
-                                    © Copyright 2022 Graphic Art Mart Pty Ltd
-                                </p>
+                    <div class="col l-4">
+                        <div class="footer__widket">
+                            <div class="footer__widket-title">
+                                <h4>CONSUMABLES</h4>
                             </div>
-                        </div>
-                        <div class="col l-6">
-                            <div class="footer__payment">
-                                <h4 class="footer__payment-title">PAYMENT METHODS</h4>
-                                <div class="footer__payment-box">
-                                    <a href="">
-                                        <img src="./assets/images/icon-footer/visa.png" alt="">
-                                    </a>
-                                    <a href="">
-                                        <img src="./assets/images/icon-footer/Icon simple-mas.png" alt="">
-                                    </a>
+                            <div class="footer__widket-content">
+                                <div class="row">
+                                    <div class="col l-6">
+                                        <ul>
+                                            <li><a href="">COLOUR & APPLICATION TAPES</a></li>
+                                            <li><a href="">DIGITAL PRINT MEDIA & LAMINATES</a></li>
+                                            <li><a href="">DISPLAY & POS </a></li>
+                                            <li><a href="">HEAT TRANSFER</a></li>
+                                            <li><a href="">INKS</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col l-6">
+                                        <ul>
+                                            <li><a href="">COLOUR & APPLICATION TAPES</a></li>
+                                            <li><a href="">DIGITAL PRINT MEDIA & LAMINATES</a></li>
+                                            <li><a href="">DISPLAY & POS </a></li>
+                                            <li><a href="">HEAT TRANSFER</a></li>
+                                            <li><a href="">INKS</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="col l-4">
+                        <div class="footer__widket">
+                            <div class="footer__widket-title">
+                                <h4>EQUIPMENT</h4>
+                            </div>
+                            <div class="footer__widket-content">
+                                <div class="row">
+                                    <div class="col l-6">
+                                        <ul>
+                                            <li><a href="">COLOUR & APPLICATION TAPES</a></li>
+                                            <li><a href="">DIGITAL PRINT MEDIA & LAMINATES</a></li>
+                                            <li><a href="">DISPLAY & POS </a></li>
+                                            <li><a href="">HEAT TRANSFER</a></li>
+                                            <li><a href="">INKS</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col l-6">
+                                        <ul>
+                                            <li><a href="">COLOUR & APPLICATION TAPES</a></li>
+                                            <li><a href="">DIGITAL PRINT MEDIA & LAMINATES</a></li>
+                                            <li><a href="">DISPLAY & POS </a></li>
+                                            <li><a href="">HEAT TRANSFER</a></li>
+                                            <li><a href="">INKS</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-40">
+                    <div class="col l-6">
+                        <div class="footer__coppyright">
+                            <div class="footer__coppyright-phone">
+                                <img src="./assets/images/icon-header/phone.png" alt="phone">
+                                <h4>1300 426 278</h4>
+                            </div>
+                            <p class="footer__coppyright-title">
+                                © Copyright 2022 Graphic Art Mart Pty Ltd
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col l-6">
+                        <div class="footer__payment">
+                            <h4 class="footer__payment-title">PAYMENT METHODS</h4>
+                            <div class="footer__payment-box">
+                                <a href="">
+                                    <img src="./assets/images/icon-footer/visa.png" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="./assets/images/icon-footer/Icon simple-mas.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script>
+        var elem1 = document.querySelector('.slider1-carousel2');
+        var elem = document.querySelector('.slider1-carousel');
+        var flkty = new Flickity(elem, {
+            // options
+            contain: true,
+            groupCells: true,
+            pageDots: false
+        });
+        var flkty1 = new Flickity(elem1, {
+            // options
+            groupCells: 6,
+            contain: true,
+            pageDots: false
+        });
+    </script>
 </body>
 
 </html>

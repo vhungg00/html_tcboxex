@@ -11,6 +11,10 @@
 
     --bg-button-secondary: #23499f;
     --bg-footer: #e8e8e8;
+    --cerulean: #0497d8;
+    --negative-1: #d9222a;
+    --rectangle: #4aa46e;
+    --primary-d-1: #23499f;
 }
 
 .header__top {
@@ -298,4 +302,222 @@
 
 .footer__payment-box a img {
     height: 13px;
+}
+
+.breadcrumb__wrapper {
+    list-style: none;
+    display: flex;
+
+}
+
+.breadcrumd__wrapper {}
+
+.breadcrumb-item {
+    font-size: 12px;
+    color: #888888;
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.breadcrumb.active {
+    color: #fcb700;
+}
+
+.breadcrumb-item {
+    padding-right: 5px;
+
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: var(--bs-breadcrumb-divider, ">");
+    float: left;
+    padding-right: 5px;
+}
+
+.selection__heading h2 {
+    font-size: 42px;
+    color: #2a2a2a;
+    text-align: center;
+}
+
+.selection__tappant {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.selection__tappant li {
+    font-size: 26px;
+    padding: 10px 12px;
+    font-weight: 600;
+    color: #505050;
+    cursor: pointer;
+}
+
+.selection__tappant li.selection__tappant--active {
+    color: #0497d8;
+    border-bottom: 3px solid #0497d8;
+}
+
+.selection__slider1-title {
+    color: #505050;
+    font-size: 18px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.carousel-cell-box {
+    width: 24%;
+    margin-right: 24px;
+    height: 264px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.selection__slider2 .carousel-cell-box {
+    width: 15%;
+}
+
+.selection__slider2 .carousel-cell-box {
+    height: 216px;
+}
+
+.selection__slider2 .carousel-cell-box.slider2-carousel-cell--active {
+    border: 1px solid #1d57d9;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+
+.slider1-carousel-cell--active {
+    border: 1px solid #1d57d9;
+}
+
+.carousel-cell-box h3 {
+    margin-top: 5%;
+    margin-left: 2.5%;
+}
+
+.slider1-carousel-cell {
+    margin: 0 auto;
+    width: 95%;
+    height: 80%;
+    counter-increment: carousel-cell;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cerulean {
+    background-color: var(--cerulean);
+}
+
+.negative {
+    background-color: var(--negative-1);
+}
+
+.rectangle {
+    background-color: var(--rectangle);
+}
+
+.primary-d-1 {
+    background-color: var(--primary-d-1);
+}
+
+.gray-1 {
+    background-color: #EBEBEB;
+}
+
+.flickity-prev-next-button.previous {
+    left: -40px !important;
+}
+
+.flickity-prev-next-button.next {
+    right: -40px !important;
+}
+
+.flickity-prev-next-button .flickity-button-icon {
+    top: -18px !important;
+}
+
+.flickity-button {
+    background-color: transparent !important;
+}
+
+.selection__slider1 {
+    padding: 20px 0;
+}
+
+.selection__slider2 {
+    padding: 70px 0;
+}
+
+.selection__slider2 .btn {
+    display: flex;
+    margin: 40px auto;
+    font-size: 18px;
+    padding: 10px 50px;
+    color: #fff;
+    background-color: #0497d8;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.selection__slider2-footer {
+    text-align: center;
+    color: #505050;
+    font-size: 15px;
+}
+
+.selection__slider2-footer a {
+    color: #0497d8;
+    font-weight: 600;
+}
+
+.subcribe__area {
+    background-color: var(--bg-bottom-header);
+}
+
+.subcribe__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.subcribe__wrapper p,
+.subcribe__wrapper h2 {
+    color: var(--content-secondary);
+}
+
+.subcribe__wrapper h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.subcribe__wrapper p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+.subcribe__wrapper .form-control {
+    font-size: 15px;
+    line-height: 18px;
+    color: #888888;
+    padding: 13px 14px;
+    border-radius: 10px;
+}
+
+.subcribe__wrapper form .form-control:nth-child(3) {
+    width: 330px;
+}
+
+.subcribe__wrapper .submit-btn {
+    padding: 13px 40px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #0497d8;
 }
